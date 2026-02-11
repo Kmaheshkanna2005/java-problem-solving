@@ -3,6 +3,13 @@ public class reversearrayusingtwopointer {
         int[] arr = {1,2,3,4,5,6};
         int left=0;
         int right=arr.length-1;
+        System.out.println("the first type:");
+        for(int i=arr.length-1;i>=0;i--)
+        {
+            System.out.print(arr[i]+" ");
+        }
+        System.out.println(" ");
+        System.out.println("the second type:");
         while(left<right)
         {
             int temp = arr[left];
