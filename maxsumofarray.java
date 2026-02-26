@@ -15,7 +15,8 @@ public class maxsumofarray
         maxsum = currentsum;
         for(int i=k;i<arr.length;i++)
         {
-            currentsum+=arr[i]-arr[i-k];
+            currentsum+=arr[i];
+            currentsum-=arr[i-k];
             maxsum = Math.max(currentsum, maxsum);
         }
         System.out.println(maxsum);
